@@ -39,7 +39,10 @@ public class Lab4P2_CarlosOchoa {
                     break;
                 case 2:
                     menuInquilino();
+                    break;
                 case 3:
+                    menuLimpiador();
+                    break;
                 case 4:
                 case 5:
                 case 6:
@@ -108,6 +111,30 @@ public class Lab4P2_CarlosOchoa {
             }
         }while(opcionInquilino!= 5);
         
+    }
+    
+    public static void menuLimpiador(){
+        int opcionLimpiador = 0;
+        
+        do{
+            System.out.println("===MENU LIMPIADOR===");
+            System.out.println("1.ofrcer limpieza.");
+            System.out.println("2.limpiar apartamentos");
+            System.out.println("3.volver al menu principal");
+            System.out.println("seleccione una opcion");
+            
+            opcionLimpiador = scanner.nextInt();
+            scanner.nextLine();
+            
+            switch(opcionLimpiador){
+                case 1:
+                case 2:
+                case 3:
+                default:
+                    System.out.println("saliendo...");
+                    break;
+            }
+        }while(opcionLimpiador!= 3);
     }
     
 }//fin de la clase
