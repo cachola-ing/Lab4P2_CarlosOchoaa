@@ -38,6 +38,7 @@ public class Lab4P2_CarlosOchoa {
                     menuCasero();
                     break;
                 case 2:
+                    menuInquilino();
                 case 3:
                 case 4:
                 case 5:
@@ -80,6 +81,32 @@ public class Lab4P2_CarlosOchoa {
     }
     
     public static void menuInquilino(){
+        
+        int opcionInquilino = 0;
+        
+        do{
+            System.out.println("===MENU INQUILINO===");
+            System.out.println("1.Firmar contrato");
+            System.out.println("2.Cortar contrato");
+            System.out.println("3.Solicitar Limpieza");
+            System.out.println("4.Aceptar Limpieza");
+            System.out.println("5.Volver al menu principal");
+            System.out.println("Seleccione una opcion: ");
+            
+            opcionInquilino = scanner.nextInt();
+            scanner.nextLine();
+            
+            switch(opcionInquilino){
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                default:
+                    System.out.println("opcion invalida.");
+                    break;
+            }
+        }while(opcionInquilino!= 5);
         
     }
     
